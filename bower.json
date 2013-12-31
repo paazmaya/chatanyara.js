@@ -1,5 +1,5 @@
 {
-  "name": "ChatanyaraJS",
+  "name": "Chatanyara.js",
   "version": "0.1.0",
   "authors": [
     "Juga Paazmaya <olavic@gmail.com>"
@@ -8,7 +8,9 @@
   "main": "Chatanyara.js",
   "keywords": [
     "performance",
-    "navigation"
+    "navigation",
+    "timing",
+    "resource"
   ],
   "license": "MIT",
   "ignore": [
