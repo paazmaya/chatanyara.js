@@ -19,16 +19,29 @@ bower install Chatanyara.js
 var results = Chatanyara.parse();
 ```
 
+Returns something similar to
+
+```js
+{
+  url: '/',
+  userAgent: 'Mozilla 5 ...',
+  navigation: false,
+  resource: false,
+  memory: false
+}
+```
+
 ## Version history
 
 Version | Date       | Changes
 ------- | ---------- | --------
 0.1.0   | 2013-12-31 | First release
+0.1.1   | 2014-01-01 | Vanilla JS release with removal of jQuery.each
 
 
 ## License
 
-Copyright (c) 2013 Juga Paazmaya <olavic@gmail.com>
+Copyright (c) 2013-2014 Juga Paazmaya <olavic@gmail.com>
 
 Licensed under the [MIT license](LICENSE-MIT).
 
