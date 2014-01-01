@@ -10,9 +10,9 @@
 var Chatanyara = (function () {
 
   var Kushanku = {
-  
+
     performance: typeof window.performance !== 'object' || window.performance,
-  
+
     /**
      * Navigation Timing API.
      *
@@ -21,23 +21,23 @@ var Chatanyara = (function () {
      */
     getNavigationTimings: function () {
       if (!this.performance ||
-          typeof window.performance.timing !== 'object') {
-        return;
+          typeof this.performance.timing !== 'object') {
+        return false;
       }
       var data = {};
-      // Only numbers are interesting
+      var timing = this.performance.timing;
       // navigationStart is the first event taking place in the PerformanceTiming sequence
-      var navigationStart = window.performance.timing.navigationStart;
+      var navigationStart = timing.navigationStart;
       // All the keys will be set to the relative time as it gives more value than the time.
-      $.each(window.performance.timing, function (key, value) {
-        if (typeof value === 'number') {
-          // Value should be the time when the given event took place, 
+      for (var key in timing) {
+        // Only numbers are interesting
+        if (typeof timing[key] === 'number') {
+          // Value should be the time when the given event took place,
           // but might be 0 if the event was not fired or was not completed.
-          data[key] = value === 0 ? 0 : value - navigationStart;
+          data[key] = timing[key] === 0 ? 0 : timing[key] - navigationStart;
         }
-      });
+      }
 
-    
       /*
       interface PerformanceNavigation {
         const unsigned short TYPE_NAVIGATE = 0;
@@ -48,8 +48,8 @@ var Chatanyara = (function () {
         readonly attribute unsigned short redirectCount;
       };
       */
-      if (typeof window.performance.navigation === 'object') {
-        var nav = window.performance.navigation;
+      if (typeof this.performance.navigation === 'object') {
+        var nav = this.performance.navigation;
         data.redirectCount = nav.redirectCount;
         data.navigationType = nav.type < 3 ? ['NAVIGATE', 'RELOAD', 'BACK_FORWARD'][nav.type] : nav.type;
       }
@@ -64,11 +64,11 @@ var Chatanyara = (function () {
      */
     getResourceTimings: function () {
       if (!this.performance ||
-          typeof window.performance.getEntriesByType !== 'function') {
-        return;
+          typeof this.performance.getEntriesByType !== 'function') {
+        return false;
       }
       // Convert to plain Objects
-      var entries = JSON.parse(JSON.stringify(window.performance.getEntriesByType('resource')));
+      var entries = JSON.parse(JSON.stringify(this.performance.getEntriesByType('resource')));
 
       return entries;
     },
@@ -78,16 +78,16 @@ var Chatanyara = (function () {
      */
     getMemoryInfo: function () {
       if (!this.performance ||
-          typeof window.performance.memory !== 'object') {
+          typeof this.performance.memory !== 'object') {
         return false;
       }
       // Convert to plain Objects
-      var memory = JSON.parse(JSON.stringify(window.performance.memory));
+      var memory = JSON.parse(JSON.stringify(this.performance.memory));
 
       return memory;
     }
   };
-  
+
   var Sai = {
     parse: function () {
       return {
@@ -99,6 +99,6 @@ var Chatanyara = (function () {
       };
     }
   };
-  
+
   return Sai;
 }());
