@@ -1,0 +1,30 @@
+{
+  "name": "Chatanyara.js",
+  "version": "0.1.1",
+  "author": "Juga Paazmaya <olavic@gmail.com>",
+  "description": "Collect Performance API data to a plain JavaScript Object",
+  "homepage": "https://github.com/paazmaya/Chatanyara.js",
+  "main": "Chatanyara.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paazmaya/Chatanyara.js.git"
+  },
+  "keywords": [
+    "performance",
+    "navigation",
+    "timing",
+    "resource"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paazmaya/Chatanyara.js/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-saucelabs": "~4.1.2"
+  }
+}

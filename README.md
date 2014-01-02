@@ -6,6 +6,7 @@ Name of this JavaScript helper has been inspired by the late Karate master from
 Okinawa, Japan. His name has been dedicated to few Karate and Ryukyu Kobujutsu
 kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/paazmaya.svg)](https://saucelabs.com/u/paazmaya)
 
 ## Installation
 
@@ -37,7 +38,7 @@ Version | Date       | Changes
 ------- | ---------- | --------
 0.1.0   | 2013-12-31 | First release
 0.1.1   | 2014-01-01 | Vanilla JS release with removal of jQuery.each
-
+0.1.2   | 2014-01-0x | Mocha tests running at Saucelabs #1
 
 ## License
 
