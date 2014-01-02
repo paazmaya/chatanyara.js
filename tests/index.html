@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Mocha Tests</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+	<div id="mocha"></div>
+	<script src="../node_modules/mocha/mocha.js"></script>
+	<script>mocha.setup('bdd')</script>
+	<script src="../node_modules/chai/chai.js"></script>
+	<script src="../Chatanyara.js"></script>
+	<script src="specs/chrome.js"></script>
+  <script src="../node_modules/mocha-sauce/client.js"></script>
+	<script>
+		mochaSaucePlease();
+	</script>
+</div>
+</body>
+</html>

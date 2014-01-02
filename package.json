@@ -6,7 +6,7 @@
   "homepage": "https://github.com/paazmaya/Chatanyara.js",
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "node tests/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,8 @@
     "url": "https://github.com/paazmaya/Chatanyara.js/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-saucelabs": "~4.1.2"
+    "mocha": "~1.16.2",
+    "mocha-sauce": "0.0.3",
+    "chai": "~1.8.1"
   }
 }
