@@ -11,16 +11,15 @@ var MochaSauce = require('../node_modules/mocha-sauce/index.js');
 
 // configure cloud
 var sauce = new MochaSauce({
-	name: 'Chatanyara Sogo Embu Kumite',
-	username: process.env.SAUCE_USERNAME,
-	accessKey: process.env.SAUCE_API_KEY,
-  build: process.env.TRAVIS_COMMIT,
-	host: 'localhost',
-	port: 4445,
-	url: 'http://localhost:5050/tests/index.html',
+  name: 'Chatanyara Sogo Embu Kumite',
+  username: process.env.SAUCE_USERNAME || 'paazmaya',
+  accessKey: process.env.SAUCE_API_KEY || '',
+  build: process.env.TRAVIS_COMMIT || Date.now(),
+  host: 'localhost',
+  port: 4445,
+  url: 'http://localhost:5050/tests/index.html',
   tags: ['master']
 });
-console.dir(sauce);
 
 sauce.record(true); // true for screenshots
 
@@ -89,5 +88,5 @@ sauce.start(function(err, res) {
 	// A full report in Jasmine-style JSON syntax
 	//console.log(res[0].jsonReport);
   
-  server.close();
+  //server.close();
 });
