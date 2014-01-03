@@ -14,7 +14,7 @@ var sauce = new MochaSauce({
 	name: 'Chatanyara Sogo Embu Kumite',
 	username: process.env.SAUCE_USERNAME,
 	accessKey: process.env.SAUCE_API_KEY,
-  build: process.env.TRAVIS_JOB_ID,
+  build: process.env.TRAVIS_COMMIT,
 	host: 'localhost',
 	port: 4445,
 	url: 'http://localhost:5050/tests/index.html',
