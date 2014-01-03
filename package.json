@@ -23,8 +23,8 @@
     "url": "https://github.com/paazmaya/Chatanyara.js/issues"
   },
   "devDependencies": {
-    "mocha": "~1.16.2",
-    "mocha-sauce": "0.0.3",
+    "mocha": "1.9.0",
+    "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git",
     "chai": "~1.8.1"
   }
 }

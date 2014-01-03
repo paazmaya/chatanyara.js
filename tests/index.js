@@ -3,27 +3,66 @@ var MochaSauce = require('../node_modules/mocha-sauce/index.js');
 // configure cloud
 var sauce = new MochaSauce({
 	name: 'Chatanyara Sogo Embu Kumite',
-	username: 'paazmaya',
-	accessKey: '',
+	username: process.env.SAUCE_USERNAME,
+	accessKey: process.env.SAUCE_API_KEY,
+  build: process.env.TRAVIS_JOB_ID,
 	host: 'localhost',
-	port: 260112,
-	url: 'http://localhost:260112/tests/test.html'
+	port: 4445,
+	url: 'http://localhost/tests/test.html',
+  tags: ['master']
 });
+console.dir(sauce);
 
-sauce.record(true);
+sauce.record(true); // true for screenshots
 
-sauce.browser({ browserName: 'chrome', platform: 'Windows 7' });
+
+// https://saucelabs.com/platforms/selenium
+var browsers = [
+  {
+    browserName: 'googlechrome',
+    platform: 'Windows 8.1',
+    version: '31'
+  },
+  {
+    browserName: 'firefox',
+    platform: 'Windows 8',
+    version: '26'
+  },
+  {
+    browserName: 'opera',
+    platform: 'Windows 7',
+    version: '12'
+  },
+  {
+    browserName: 'iehta',
+    platform: 'Windows XP',
+    version: '8'
+  },
+  {
+    browserName: 'safari',
+    platform: 'OS X 10.8',
+    version: '6'
+  },
+  {
+    browserName: 'firefox',
+    platform: 'Linux',
+    version: '4'
+  }
+];
+browsers.forEach(function (item) {
+  sauce.browser(item);
+});  
 
 sauce.on('init', function(browser) {
-  console.log('\tinit\t: %s %s', browser.browserName, browser.platform);
+  console.log('\tinit\t: %s %s (%s)', browser.browserName, browser.version, browser.platform);
 });
 
 sauce.on('start', function(browser) {
-  console.log('\tstart\t: %s %s', browser.browserName, browser.platform);
+  console.log('\tstart\t: %s %s (%s)', browser.browserName, browser.version, browser.platform);
 });
 
 sauce.on('end', function(browser, res) {
-  console.log('\tend\t: %s %s: %d failures', browser.browserName, browser.platform, res.failures);
+  console.log('\tend\t: %s %s (%s): %d failures', browser.browserName, browser.version, browser.platform, res.failures);
 });
 
 sauce.start(function(err, res) {
