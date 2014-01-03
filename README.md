@@ -33,6 +33,9 @@ Returns something similar to
 }
 ```
 
+Depending on the browser, the keys `navigation`, `resource` and `memory` will provide 
+further information about each related performance API.
+
 ## Version history
 
 Version | Date       | Changes

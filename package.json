@@ -25,6 +25,8 @@
   "devDependencies": {
     "mocha": "1.9.0",
     "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "mocha-phantomjs": "~3.3.1",
+    "connect": "~2.12.0"
   }
 }

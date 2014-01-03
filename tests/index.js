@@ -1,3 +1,12 @@
+var connect = require('connect'), http = require('http');
+var app = connect()
+  .use(connect.logger('dev'))
+  .use(connect.directory(__dirname + '/../', { icons: true }))
+  .use('/', connect.static(__dirname + '/../'));
+var server = http.createServer(app).listen(5050);
+
+// ---
+
 var MochaSauce = require('../node_modules/mocha-sauce/index.js');
 
 // configure cloud
@@ -8,7 +17,7 @@ var sauce = new MochaSauce({
   build: process.env.TRAVIS_JOB_ID,
 	host: 'localhost',
 	port: 4445,
-	url: 'http://localhost/tests/test.html',
+	url: 'http://localhost:5050/tests/index.html',
   tags: ['master']
 });
 console.dir(sauce);
@@ -66,7 +75,7 @@ sauce.on('end', function(browser, res) {
 });
 
 sauce.start(function(err, res) {
-	if(err) {
+	if (err) {
 		console.log(err);
 	}
 
@@ -79,5 +88,6 @@ sauce.start(function(err, res) {
 
 	// A full report in Jasmine-style JSON syntax
 	//console.log(res[0].jsonReport);
-
+  
+  server.close();
 });
