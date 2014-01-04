@@ -42,6 +42,9 @@ further information about each related performance API.
 mocha-phantomjs tests/index.html
 ```
 
+```sh
+npm run-script eslint
+```
 
 ## Version history
 

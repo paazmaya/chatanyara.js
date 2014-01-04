@@ -6,7 +6,8 @@
   "homepage": "https://github.com/paazmaya/Chatanyara.js",
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "node tests/index.js"
+    "test": "node tests/index.js",
+    "eslint": "node node_modules/eslint/bin/eslint.js --config eslint.json Chatanyara.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,11 @@
     "url": "https://github.com/paazmaya/Chatanyara.js/issues"
   },
   "devDependencies": {
-    "mocha": "1.9.0",
-    "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git",
     "chai": "~1.8.1",
+    "connect": "~2.12.0",
+    "eslint": "~0.2.0",
+    "mocha": "1.9.0",
     "mocha-phantomjs": "~3.3.1",
-    "connect": "~2.12.0"
+    "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git"
   }
 }

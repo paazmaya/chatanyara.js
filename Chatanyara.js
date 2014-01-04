@@ -8,6 +8,7 @@
  * @see https://bugzilla.mozilla.org/show_bug.cgi?id=822480
  */
 var Chatanyara = (function () {
+  'use strict';
 
   var Kushanku = {
 
@@ -20,8 +21,7 @@ var Chatanyara = (function () {
      * @see http://caniuse.com/nav-timing
      */
     getNavigationTimings: function () {
-      if (!this.performance ||
-          typeof this.performance.timing !== 'object') {
+      if (!this.performance || typeof this.performance.timing !== 'object') {
         return false;
       }
       var data = {};
@@ -63,8 +63,7 @@ var Chatanyara = (function () {
      * @see https://bugzilla.mozilla.org/show_bug.cgi?id=822480
      */
     getResourceTimings: function () {
-      if (!this.performance ||
-          typeof this.performance.getEntriesByType !== 'function') {
+      if (!this.performance || typeof this.performance.getEntriesByType !== 'function') {
         return false;
       }
       // Convert to plain Objects
@@ -77,8 +76,7 @@ var Chatanyara = (function () {
      * Chome only
      */
     getMemoryInfo: function () {
-      if (!this.performance ||
-          typeof this.performance.memory !== 'object') {
+      if (!this.performance || typeof this.performance.memory !== 'object') {
         return false;
       }
       // Convert to plain Objects
