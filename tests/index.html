@@ -7,9 +7,10 @@
 <body>
 	<div id="mocha"></div>
 	<script src="../node_modules/mocha/mocha.js"></script>
-	<script>mocha.setup('bdd')</script>
 	<script src="../node_modules/chai/chai.js"></script>
-	<script src="../Chatanyara.js"></script>
+  <script src="../node_modules/blanket/dist/mocha/blanket_mocha.js"></script>
+	<script>mocha.setup('bdd')</script>
+	<script src="../Chatanyara.js" data-cover></script>
 	<script src="Chatanyara_spec.js"></script>
   <script src="../node_modules/mocha-sauce/client.js"></script>
 	<script>

@@ -29,6 +29,7 @@
     "eslint": "~0.2.0",
     "mocha": "1.9.0",
     "mocha-phantomjs": "~3.3.1",
-    "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git"
+    "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git",
+    "blanket": "~1.1.6"
   }
 }
