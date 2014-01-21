@@ -1,12 +1,16 @@
 {
   "name": "Chatanyara.js",
   "version": "0.1.1",
-  "author": "Juga Paazmaya <olavic@gmail.com>",
   "description": "Collect Performance API data to a plain JavaScript Object",
   "homepage": "https://github.com/paazmaya/Chatanyara.js",
+  "author": {
+    "name": "Juga Paazmaya",
+    "email": "olavic@gmail.com",
+    "url": "http://paazmaya.com"
+  },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "node tests/index.js",
+    "test": "mocha-phantomjs --reporter mocha-lcov-reporter tests/index.html",
     "eslint": "node node_modules/eslint/bin/eslint.js --config eslint.json Chatanyara.js"
   },
   "repository": {
@@ -25,11 +29,9 @@
   },
   "devDependencies": {
     "chai": "~1.8.1",
-    "connect": "~2.12.0",
     "eslint": "~0.2.0",
-    "mocha": "1.9.0",
+    "mocha": "1.12.1",
     "mocha-phantomjs": "~3.3.1",
-    "mocha-sauce": "git://github.com/pbakaus/mocha-sauce.git",
-    "blanket": "~1.1.6"
+    "blanket": "1.1.5"
   }
 }
