@@ -7,7 +7,7 @@
  * @see http://caniuse.com/nav-timing
  * @see https://bugzilla.mozilla.org/show_bug.cgi?id=822480
  */
-var Chatanyara = (function () {
+var Chatanyara = (function main() {
   'use strict';
 
   var Kushanku = {
