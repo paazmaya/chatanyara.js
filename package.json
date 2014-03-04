@@ -10,7 +10,7 @@
   },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "node node_modules/eslint/bin/eslint.js --config eslint.json Chatanyara.js -f compact && mocha-phantomjs tests/index.html",
+    "test": "node node_modules/eslint/bin/eslint.js -c eslint.json Chatanyara.js -f compact && mocha-phantomjs tests/index.html",
     "eslint": ""
   },
   "repository": {
@@ -31,7 +31,6 @@
     "chai": "^1.9",
     "eslint": "^0.4",
     "mocha": "^1.17",
-    "mocha-phantomjs": "^3.3",
-    "blanket": "^1.1"
+    "mocha-phantomjs": "^3.3"
   }
 }

@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Mocha Tests</title>
+	<title>Mocha unit tests</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
 </head>
@@ -10,19 +10,19 @@
 	<script src="../node_modules/chai/chai.js"></script>
 	<script>
     mocha.ui('bdd');
-    mocha.reporter('json-cov');
   </script>
 	<script src="../Chatanyara.js" data-cover></script>
 	<script src="Chatanyara_spec.js"></script>
 	<script>
     mocha.checkLeaks();
     mocha.globals(['Chatanyara']);
+
     if (window.mochaPhantomJS) { 
       mochaPhantomJS.run();
     }
     else {
-      mocha.run(); 
-    }
+      mocha.run();
+    } 
 	</script>
 </div>
 </body>

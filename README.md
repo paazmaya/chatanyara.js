@@ -43,7 +43,7 @@ mocha-phantomjs tests/index.html
 ```
 
 ```sh
-node node_modules/eslint/bin/eslint.js --config eslint.json Chatanyara.js
+node node_modules/eslint/bin/eslint.js --config eslint.json --format compact Chatanyara.js
 ```
 
 ## Version history
