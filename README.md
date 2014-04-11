@@ -12,7 +12,8 @@ kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 ## Installation
 
 Chatanyara.js comes with a single file, called `Chatanyara.js`. 
-It can be downloaded to a local copy directly from [Github](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js), 
+It can be downloaded to a local copy directly from 
+[Github](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js), 
 or installed via [Bower](http://bower.io/):
 
 ```sh
@@ -21,15 +22,18 @@ bower install Chatanyara.js
 
 ## Usage
 
-In order to retrieve the values for the given performance related features, it can be done as shown:
+In order to retrieve the values for the given performance related features, 
+it can be done as shown:
 
 ```js
 var results = Chatanyara.parse();
 ```
 
-Please note that it should be done no sooner than document has been loaded, preferably after all assets have also been fully loaded.
+Please note that it should be done no sooner than document has been loaded, 
+preferably after all assets have also been fully loaded.
 
-The `results` will contain something similar as shown below, in case none of the features are supported:
+The `results` will contain something similar as shown below, in case none 
+of the features are supported:
 
 ```js
 {
@@ -44,7 +48,8 @@ The `results` will contain something similar as shown below, in case none of the
 Depending on the browser, the keys `navigation`, `resource` and `memory` will provide 
 further information about each related performance API.
 
-In a recent [Google Chrome](http://www.google.com/chrome‎), the results could be something similar to:
+In a recent [Google Chrome](http://www.google.com/chrome‎), the results could be 
+something similar to:
 
 ```js
 {
@@ -123,16 +128,42 @@ In a recent [Google Chrome](http://www.google.com/chrome‎), the results could 
 
 ## Testing
 
-In order to run the included [Mocha](http://visionmedia.github.io/mocha/) based unit tests, use the following command:
+In order to run the included [Mocha](http://visionmedia.github.io/mocha/) 
+based unit tests, use the following command:
 
 ```sh
 mocha-phantomjs tests/index.html
 ```
 
-Additionally the code conventions and proper use of JavaScript can be validated via [eslint](http://eslint.org/):
+Additionally the code conventions and proper use of JavaScript can be validated 
+via [eslint](http://eslint.org/):
 
 ```sh
 node node_modules/eslint/bin/eslint.js --config eslint.json --format compact Chatanyara.js
+```
+
+## JSCritic results
+
+[JSCritic](http://jscritic.com/ "Quickly check how well 3rd party script behaves") 
+is a tool that can be used to check how well a 3rd party script behaves in the 
+terms of overwriting native objects and other practises that are considered harmful.
+
+Below are the result for `Chatanyara.js`, version 0.1.2.
+
+```
+Does it browser sniff?              No
+Does it extend native objects?      No
+Does it use document.write?         No
+Does it use eval?                   No
+Does it use ES6 features?           No
+Does it use Mozilla-only features?  No
+Does it have IE incompatibilities?  No
+How many global variables?          1
+    Chatanyara
+How many unused variables?          1
+    Chatanyara
+Total size                          3.07KB
+Minified size                       1.08KB
 ```
 
 ## Version history
