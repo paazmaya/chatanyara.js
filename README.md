@@ -181,6 +181,7 @@ Version | Date       | Changes
 0.1.0   | 2013-12-31 | First release
 0.1.1   | 2014-01-01 | Vanilla JS release with removal of jQuery.each
 0.1.2   | 2014-03-04 | Mocha tests running at Travis CI #1
+0.1.3   | 2014-04-21 | ESLint full pass, available via jsDelivr #4
 
 ## License
 

@@ -2,8 +2,9 @@
  * Navigation and Resource Timing results.
  *
  * @author Juga Paazmaya <olavic@gmail.com>
- * @license Licensed under the MIT license.
- * @version 0.1.2
+ * @license Licensed under the MIT license
+ * @version 0.1.3
+ * @see https://github.com/paazmaya/Chatanyara.js
  */
 var Chatanyara = (function main() {
   'use strict';
