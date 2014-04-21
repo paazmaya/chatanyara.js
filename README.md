@@ -128,7 +128,7 @@ something similar to:
 
 ## Testing
 
-In order to run the included [Mocha](http://visionmedia.github.io/mocha/) 
+In order to run the included [Mocha](http://visionmedia.github.io/mocha/ "Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun") 
 based unit tests, use the following command:
 
 ```sh
@@ -136,10 +136,18 @@ mocha-phantomjs tests/index.html
 ```
 
 Additionally the code conventions and proper use of JavaScript can be validated 
-via [eslint](http://eslint.org/):
+via [eslint](http://eslint.org/ "The pluggable linting utility for JavaScript"):
 
 ```sh
 node node_modules/eslint/bin/eslint.js --config eslint.json --format compact Chatanyara.js
+```
+
+## Minification
+
+The minified version is compiled with the following command, with [UglifyJS](https://github.com/mishoo/UglifyJS2/ "JavaScript parser / mangler / compressor / beautifier toolkit"):
+
+```sh
+uglifyjs -c -o Chatanyara.min.js --comments
 ```
 
 ## JSCritic results

@@ -1,11 +1,9 @@
-
 /**
  * Navigation and Resource Timing results.
  *
- * @see http://www.w3.org/TR/navigation-timing
- * @see http://www.w3.org/TR/resource-timing
- * @see http://caniuse.com/nav-timing
- * @see https://bugzilla.mozilla.org/show_bug.cgi?id=822480
+ * @author Juga Paazmaya <olavic@gmail.com>
+ * @license Licensed under the MIT license.
+ * @version 0.1.2
  */
 var Chatanyara = (function main() {
   'use strict';
