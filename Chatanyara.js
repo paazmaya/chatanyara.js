@@ -19,8 +19,9 @@ var Chatanyara = (function main() {
      *
      * @see http://www.w3.org/TR/navigation-timing/
      * @see http://caniuse.com/nav-timing
+     * @returns {boolean|object} Object with navigation timing information or false if not supported
      */
-    getNavigationTimings: function () {
+    getNavigationTimings: function navTime() {
       if (!this.performance || typeof this.performance.timing !== 'object') {
         return false;
       }
@@ -61,8 +62,9 @@ var Chatanyara = (function main() {
      *
      * @see http://www.w3.org/TR/resource-timing
      * @see https://bugzilla.mozilla.org/show_bug.cgi?id=822480
+     * @returns {boolean|object} Object with resource loading information or false if not supported
      */
-    getResourceTimings: function () {
+    getResourceTimings: function resTime() {
       if (!this.performance || typeof this.performance.getEntriesByType !== 'function') {
         return false;
       }
@@ -74,8 +76,9 @@ var Chatanyara = (function main() {
 
     /**
      * Chome only
+     * @returns {boolean|object} Object with memory information or false if not supported
      */
-    getMemoryInfo: function () {
+    getMemoryInfo: function memInfo() {
       if (!this.performance || typeof this.performance.memory !== 'object') {
         return false;
       }
@@ -87,7 +90,7 @@ var Chatanyara = (function main() {
   };
 
   var Sai = {
-    parse: function () {
+    parse: function saiParse() {
       return {
         url: window.location.pathname,
         userAgent: window.navigator.userAgent,
