@@ -13,6 +13,11 @@
     "test": "node node_modules/eslint/bin/eslint.js -c eslint.json Chatanyara.js -f compact && mocha-phantomjs tests/index.html",
     "eslint": ""
   },
+  "files": [
+    "Chatanyara.js",
+    "Chatanyara.min.js",
+    "LICENSE-MIT"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/paazmaya/Chatanyara.js.git"
