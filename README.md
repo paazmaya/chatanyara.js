@@ -20,6 +20,8 @@ or installed via [Bower](http://bower.io/):
 bower install Chatanyara.js
 ```
 
+Also available via [jsDelivr - Open Source CDN](http://www.jsdelivr.com/#!chatanyara.js "Chatanyara.js at jsDelivr - Open Source CDN").
+
 ## Usage
 
 In order to retrieve the values for the given performance related features, 
