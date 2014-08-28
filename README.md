@@ -6,7 +6,7 @@ Name of this JavaScript helper has been inspired by the late Karate master from
 Okinawa, Japan. His name has been dedicated to few Karate and Ryukyu Kobujutsu
 kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
-[![Build Status](https://travis-ci.org/paazmaya/Chatanyara.js.png?branch=master)](https://travis-ci.org/paazmaya/Chatanyara.js)
+[![wercker status](https://app.wercker.com/status/3f2efd13e486de3e5f2943f360dd78ec/s "wercker status")](https://app.wercker.com/project/bykey/3f2efd13e486de3e5f2943f360dd78ec)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/Chatanyara.js)](https://github.com/igrigorik/ga-beacon)
 
 ## Installation
