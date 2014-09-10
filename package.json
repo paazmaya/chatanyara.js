@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "chai": "^1.9",
-    "eslint": "^0.7",
+    "eslint": "^0.8",
     "mocha": "^1.19",
     "mocha-phantomjs": "^3.4"
   }
