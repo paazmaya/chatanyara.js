@@ -2,7 +2,7 @@
 
 > Navigation and Resource Timing results
 
-Name of this JavaScript helper has been inspired by the late Karate master from 
+Name of this JavaScript helper has been inspired by the late Karate master from
 Okinawa, Japan. His name has been dedicated to few Karate and Ryukyu Kobujutsu
 kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
@@ -11,9 +11,9 @@ kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 ## Installation
 
-Chatanyara.js comes with a single file, called `Chatanyara.js`. 
-It can be downloaded to a local copy directly from 
-[Github](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js), 
+Chatanyara.js comes with a single file, called `Chatanyara.js`.
+It can be downloaded to a local copy directly from
+[Github](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js),
 or installed via [Bower](http://bower.io/):
 
 ```sh
@@ -24,17 +24,17 @@ Also available via [jsDelivr - Open Source CDN](http://www.jsdelivr.com/#!chatan
 
 ## Usage
 
-In order to retrieve the values for the given performance related features, 
+In order to retrieve the values for the given performance related features,
 it can be done as shown:
 
 ```js
 var results = Chatanyara.parse();
 ```
 
-Please note that it should be done no sooner than document has been loaded, 
+Please note that it should be done no sooner than document has been loaded,
 preferably after all assets have also been fully loaded.
 
-The `results` will contain something similar as shown below, in case none 
+The `results` will contain something similar as shown below, in case none
 of the features are supported:
 
 ```js
@@ -47,10 +47,10 @@ of the features are supported:
 }
 ```
 
-Depending on the browser, the keys `navigation`, `resource` and `memory` will provide 
+Depending on the browser, the keys `navigation`, `resource` and `memory` will provide
 further information about each related performance API.
 
-In a recent [Google Chrome](http://www.google.com/chrome‎), the results could be 
+In a recent [Google Chrome](http://www.google.com/chrome‎), the results could be
 something similar to:
 
 ```js
@@ -130,14 +130,14 @@ something similar to:
 
 ## Testing
 
-In order to run the included [Mocha](http://visionmedia.github.io/mocha/ "Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun") 
+In order to run the included [Mocha](http://visionmedia.github.io/mocha/ "Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun")
 based unit tests, use the following command:
 
 ```sh
 mocha-phantomjs tests/index.html
 ```
 
-Additionally the code conventions and proper use of JavaScript can be validated 
+Additionally the code conventions and proper use of JavaScript can be validated
 via [eslint](http://eslint.org/ "The pluggable linting utility for JavaScript"):
 
 ```sh
@@ -154,8 +154,8 @@ uglifyjs -c -o Chatanyara.min.js --comments
 
 ## JSCritic results
 
-[JSCritic](http://jscritic.com/ "Quickly check how well 3rd party script behaves") 
-is a tool that can be used to check how well a 3rd party script behaves in the 
+[JSCritic](http://jscritic.com/ "Quickly check how well 3rd party script behaves")
+is a tool that can be used to check how well a 3rd party script behaves in the
 terms of overwriting native objects and other practises that are considered harmful.
 
 Below are the result for `Chatanyara.js`, version 0.1.2.
