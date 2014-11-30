@@ -10,7 +10,7 @@
   },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "node node_modules/eslint/bin/eslint.js -c eslint.json Chatanyara.js -f compact && mocha-phantomjs tests/index.html",
+    "test": "node node_modules/eslint/bin/eslint.js Chatanyara.js -f compact && mocha-phantomjs tests/index.html",
     "eslint": ""
   },
   "files": [
