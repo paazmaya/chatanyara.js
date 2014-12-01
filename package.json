@@ -38,9 +38,9 @@
     "url": "https://github.com/paazmaya/Chatanyara.js/issues"
   },
   "devDependencies": {
-    "chai": "~1.9",
-    "eslint": "~0.8",
-    "mocha": "~1.19",
-    "mocha-phantomjs": "~3.4"
+    "chai": "~1.10",
+    "eslint": "~0.10",
+    "mocha": "~2.0",
+    "mocha-phantomjs": "~3.5"
   }
 }
