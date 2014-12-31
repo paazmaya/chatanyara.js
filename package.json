@@ -10,8 +10,7 @@
   },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "node node_modules/eslint/bin/eslint.js Chatanyara.js -f compact && mocha-phantomjs tests/index.html",
-    "eslint": ""
+    "test": "./node_modules/.bin/eslint -f compact -c .eslintrc Chatanyara.js && mocha-phantomjs tests/index.html"
   },
   "files": [
     "Chatanyara.js",
@@ -39,7 +38,7 @@
   },
   "devDependencies": {
     "chai": "~1.10",
-    "eslint": "~0.10",
+    "eslint": "~0.11",
     "mocha": "~2.1",
     "mocha-phantomjs": "~3.5"
   }

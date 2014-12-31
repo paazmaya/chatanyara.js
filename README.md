@@ -2,8 +2,8 @@
 
 > Navigation and Resource Timing results
 
-Name of this JavaScript helper has been inspired by the late Karate master from
-Okinawa, Japan. His name has been dedicated to few Karate and Ryukyu Kobujutsu
+Name of this JavaScript helper utility has been inspired by the late Karate master from
+Okinawa, Japan. His name has also been dedicated to a few Karate and Ryukyu Kobujutsu
 kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 [![wercker status](https://app.wercker.com/status/3f2efd13e486de3e5f2943f360dd78ec/s "wercker status")](https://app.wercker.com/project/bykey/3f2efd13e486de3e5f2943f360dd78ec)
