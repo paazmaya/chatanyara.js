@@ -40,7 +40,7 @@
   "devDependencies": {
     "chai": "~1.10",
     "eslint": "~0.10",
-    "mocha": "~2.0",
+    "mocha": "~2.1",
     "mocha-phantomjs": "~3.5"
   }
 }
