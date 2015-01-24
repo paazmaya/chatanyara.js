@@ -177,6 +177,10 @@ Total size                          3.07KB
 Minified size                       1.08KB
 ```
 
+## Contributing
+
+[Please refer to a GitHub blog post on how to create somewhat perfect pull request.](https://github.com/blog/1943-how-to-write-the-perfect-pull-request "How to write the perfect pull request")
+
 ## Version history
 
 Version | Date       | Changes
@@ -188,7 +192,7 @@ Version | Date       | Changes
 
 ## License
 
-Copyright (c) 2013-2014 Juga Paazmaya <olavic@gmail.com>
+Copyright (c) Juga Paazmaya <olavic@gmail.com>
 
 Licensed under the [MIT license](LICENSE-MIT).
 
