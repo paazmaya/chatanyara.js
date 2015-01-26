@@ -142,7 +142,7 @@ Additionally the code conventions and proper use of JavaScript can be validated
 via [eslint](http://eslint.org/ "The pluggable linting utility for JavaScript"):
 
 ```sh
-node node_modules/eslint/bin/eslint.js --config eslint.json --format compact Chatanyara.js
+node node_modules/eslint/bin/eslint.js --config .eslintrc --format compact Chatanyara.js
 ```
 
 ## Minification

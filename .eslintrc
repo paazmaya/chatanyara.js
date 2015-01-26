@@ -47,11 +47,10 @@
     "no-extra-boolean-cast": 2,
     "no-extra-parens": 0,
     "no-extra-semi": 2,
-    "no-extra-strict": 0,
+    "strict": [2, "global"],
     "no-fallthrough": 2,
     "no-floating-decimal": 0,
     "no-func-assign": 2,
-    "no-global-strict": 0,
     "no-implied-eval": 2,
     "no-invalid-regexp": 2,
     "no-iterator": 2,
@@ -109,7 +108,6 @@
     "space-infix-ops": 2,
     "space-return-throw-case": 2,
     "space-unary-ops": 0,
-    "strict": 2,
     "use-isnan": 2,
     "valid-jsdoc": 1,
     "valid-typeof": 2,
@@ -119,6 +117,7 @@
     "no-undefined": 1,
     "no-mixed-spaces-and-tabs": 2,
     "no-trailing-spaces": 2,
+    "spaced-line-comment": [2, "always"],
     "eol-last": 1
   },
   "env": {
