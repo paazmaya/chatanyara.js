@@ -10,6 +10,7 @@
     "dot-notation": 1,
     "eqeqeq": 2,
     "func-names": 1,
+    "indent": [2, 2],
     "no-inline-comments": 0,
     "operator-assignment": [2, "always"],
     "func-style": [0, "declaration"],
@@ -113,7 +114,7 @@
     "valid-typeof": 2,
     "wrap-iife": 0,
     "wrap-regex": 0,
-    
+
     "no-undefined": 1,
     "no-mixed-spaces-and-tabs": 2,
     "no-trailing-spaces": 2,
