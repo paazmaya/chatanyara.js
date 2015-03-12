@@ -14,7 +14,7 @@ kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 Chatanyara.js comes with a single file, called `Chatanyara.js`.
 It can be downloaded to a local copy directly from
-[Github](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js),
+[GitHub](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js),
 or installed via [Bower](http://bower.io/):
 
 ```sh
