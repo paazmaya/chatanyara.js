@@ -10,7 +10,7 @@
   },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint -f compact -c .eslintrc Chatanyara.js && mocha-phantomjs tests/index.html"
+    "test": "eslint -f compact -c .eslintrc Chatanyara.js && mocha-phantomjs tests/index.html"
   },
   "files": [
     "Chatanyara.js",
