@@ -1,7 +1,7 @@
 /**
  * Navigation and Resource Timing results.
  *
- * @author Juga Paazmaya <olavic@gmail.com>
+ * @author Juga Paazmaya <paazmaya@yahoo.com>
  * @license Licensed under the MIT license
  * @version 0.1.3
  * @see https://github.com/paazmaya/Chatanyara.js
