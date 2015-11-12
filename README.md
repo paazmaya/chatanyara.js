@@ -192,7 +192,7 @@ Version | Date       | Changes
 
 ## License
 
-Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
+Copyright (c) [Juga Paazmaya <paazmaya@yahoo.com>](http://paazmaya.fi)
 
 Licensed under the [MIT license](LICENSE).
 
