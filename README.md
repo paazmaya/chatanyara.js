@@ -21,6 +21,12 @@ or installed via [Bower](http://bower.io/):
 bower install Chatanyara.js
 ```
 
+Or via npm:
+
+```sh
+npm install Chatanyara.js
+```
+
 Also available via [jsDelivr - Open Source CDN](http://www.jsdelivr.com/#!chatanyara.js "Chatanyara.js at jsDelivr - Open Source CDN").
 
 ## Usage
@@ -150,7 +156,13 @@ node node_modules/eslint/bin/eslint.js --config .eslintrc --format compact Chata
 The minified version is compiled with the following command, with [UglifyJS](https://github.com/mishoo/UglifyJS2/ "JavaScript parser / mangler / compressor / beautifier toolkit"):
 
 ```sh
-uglifyjs -c -o Chatanyara.min.js --comments
+uglifyjs --compress --output Chatanyara.min.js --comments  Chatanyara.js
+```
+
+This command is saved in `package.json` as `build` script and can be executed with:
+
+```sh
+npm run build
 ```
 
 ## JSCritic results
@@ -183,16 +195,17 @@ Minified size                       1.08KB
 
 ## Version history
 
-Version | Date       | Changes
-------- | ---------- | --------
-0.1.0   | 2013-12-31 | First release
-0.1.1   | 2014-01-01 | Vanilla JS release with removal of jQuery.each
-0.1.2   | 2014-03-04 | Mocha tests running at Travis CI #1
-0.1.3   | 2014-04-21 | ESLint full pass, available via jsDelivr #4
+Version  | Date       | Changes
+-------- | ---------- | --------
+`v0.2.0` | 2015-11-16 | Available via npm #9 #5. Testing at Wercker
+`v0.1.3` | 2014-04-21 | ESLint full pass, available via jsDelivr #4
+`v0.1.2` | 2014-03-04 | Mocha tests running at Travis CI #1
+`v0.1.1` | 2014-01-01 | Vanilla JS release with removal of jQuery.each
+`v0.1.0` | 2013-12-31 | First release
 
 ## License
 
-Copyright (c) [Juga Paazmaya <paazmaya@yahoo.com>](http://paazmaya.fi)
+Copyright (c) [Juga Paazmaya](http://paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
 

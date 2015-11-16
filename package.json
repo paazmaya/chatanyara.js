@@ -1,6 +1,6 @@
 {
   "name": "Chatanyara.js",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Collect Performance API data to a plain JavaScript Object",
   "homepage": "https://github.com/paazmaya/Chatanyara.js",
   "author": {
@@ -10,7 +10,8 @@
   },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "eslint -f compact -c .eslintrc Chatanyara.js && mocha-phantomjs tests/index.html"
+    "test": "eslint -f compact -c .eslintrc Chatanyara.js && mocha-phantomjs tests/index.html",
+    "build": "uglifyjs --compress --output Chatanyara.min.js --comments --stats Chatanyara.js"
   },
   "files": [
     "Chatanyara.js",
@@ -35,6 +36,7 @@
     "chai": "~3.3",
     "eslint": "~1.6",
     "mocha": "~2.3",
-    "mocha-phantomjs": "~4.0"
+    "mocha-phantomjs": "~4.0",
+    "uglifyjs": "~2.4"
   }
 }
