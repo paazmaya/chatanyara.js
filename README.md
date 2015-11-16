@@ -1,4 +1,4 @@
-# Chatanyara.js
+# chatanyara.js
 
 > Navigation and Resource Timing results
 
@@ -12,9 +12,9 @@ kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 ## Installation
 
-Chatanyara.js comes with a single file, called `Chatanyara.js`.
+Chatanyara.js comes with a single file, called `chatanyara.js`.
 It can be downloaded to a local copy directly from
-[GitHub](https://raw.github.com/paazmaya/Chatanyara.js/master/Chatanyara.js),
+[GitHub](https://raw.github.com/paazmaya/Chatanyara.js/master/chatanyara.js),
 or installed via [Bower](http://bower.io/):
 
 ```sh
@@ -24,7 +24,7 @@ bower install Chatanyara.js
 Or via npm:
 
 ```sh
-npm install Chatanyara.js
+npm install chatanyara.js
 ```
 
 Also available via [jsDelivr - Open Source CDN](http://www.jsdelivr.com/#!chatanyara.js "Chatanyara.js at jsDelivr - Open Source CDN").
