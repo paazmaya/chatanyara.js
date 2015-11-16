@@ -6,9 +6,19 @@ build:
         code: |
           npm --versions
     - script:
-        name: Update npm so that modules are installed like in my local environment
+        name: Install PhantomJS
         code: |
-          sudo npm i -g npm
+          sudo apt-get update
+          sudo apt-get install -y phantomjs
+    - script:
+        name: Where was PhantomJS installed and its version
+        code: |
+          which phantomjs
+          phantomjs --version
+    - script:
+        name: Install global stuff which seems to be needed
+        code: |
+          sudo npm i -g npm eslint mocha-phantomjs
     - script:
         name: npm versions before
         code: |
