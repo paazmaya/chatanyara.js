@@ -1,18 +1,17 @@
 box: nodesource/trusty:LTS
-# Build definition
 build:
-  # The steps that will be executed on build
   steps:
-
-    # A custom script step, name value is used in the UI
-    # and the code value contains the command that get executed
     - script:
-        name: echo nodejs information
+        name: npm versions before
         code: |
-          echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"
-
-    # A step that executes `npm install` command
+          npm --versions
+    - script:
+        name: Update npm so that modules are installed like in my local environment
+        code: |
+          sudo npm i -g npm
+    - script:
+        name: npm versions before
+        code: |
+          npm --versions
     - npm-install
-    # A step that executes `npm test` command
     - npm-test
