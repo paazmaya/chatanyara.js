@@ -10,12 +10,13 @@
   },
   "main": "Chatanyara.js",
   "scripts": {
-    "test": "eslint -f compact -c .eslintrc Chatanyara.js && mocha-phantomjs tests/index.html",
-    "build": "uglifyjs --compress --output Chatanyara.min.js --comments --stats Chatanyara.js"
+    "test": "npm run lint && mocha-phantomjs -p ./node_modules/.bin/phantomjs tests/index.html",
+    "lint": "eslint -f compact -c .eslintrc chatanyara.js",
+    "build": "uglifyjs --compress --output chatanyara.min.js --comments --stats chatanyara.js"
   },
   "files": [
-    "Chatanyara.js",
-    "Chatanyara.min.js",
+    "chatanyara.js",
+    "chatanyara.min.js",
     "LICENSE"
   ],
   "repository": {

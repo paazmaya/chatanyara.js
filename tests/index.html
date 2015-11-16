@@ -11,18 +11,18 @@
 	<script>
     mocha.ui('bdd');
   </script>
-	<script src="../Chatanyara.js"></script>
+	<script src="../chatanyara.js"></script>
 	<script src="Chatanyara_spec.js"></script>
 	<script>
     mocha.checkLeaks();
     mocha.globals(['Chatanyara']);
 
-    if (window.mochaPhantomJS) { 
+    if (window.mochaPhantomJS) {
       mochaPhantomJS.run();
     }
     else {
       mocha.run();
-    } 
+    }
 	</script>
 </div>
 </body>
