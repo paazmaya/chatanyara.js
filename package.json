@@ -11,7 +11,7 @@
   "main": "Chatanyara.js",
   "scripts": {
     "test": "npm run lint && mocha-phantomjs -p /usr/bin/phantomjs tests/index.html",
-    "lint": "eslint -f compact -c .eslintrc chatanyara.js",
+    "lint": "eslint -f compact -c .eslintrc.json chatanyara.js",
     "build": "uglifyjs --compress --output chatanyara.min.js --comments --stats chatanyara.js"
   },
   "files": [
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "chai": "~3.3",
-    "eslint": "~1.9",
+    "eslint": "~1.10",
     "mocha": "~2.3",
     "mocha-phantomjs": "~4.0",
     "uglifyjs": "~2.4"
