@@ -4,7 +4,7 @@
  * @author Juga Paazmaya <paazmaya@yahoo.com>
  * @license Licensed under the MIT license
  * @version 0.2.0
- * @see https://github.com/paazmaya/Chatanyara.js
+ * @see https://github.com/paazmaya/chatanyara.js
  */
 var Chatanyara = (function main() {
   'use strict';

@@ -2,13 +2,13 @@
   "name": "chatanyara.js",
   "version": "0.2.0",
   "description": "Collect Performance API data to a plain JavaScript Object",
-  "homepage": "https://github.com/paazmaya/Chatanyara.js",
+  "homepage": "https://github.com/paazmaya/chatanyara.js",
   "author": {
     "name": "Juga Paazmaya",
     "email": "paazmaya@yahoo.com",
     "url": "http://paazmaya.fi"
   },
-  "main": "Chatanyara.js",
+  "main": "chatanyara.js",
   "scripts": {
     "test": "npm run lint && mocha-phantomjs -p /usr/bin/phantomjs tests/index.html",
     "lint": "eslint -f compact -c .eslintrc.json chatanyara.js",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/paazmaya/Chatanyara.js.git"
+    "url": "git://github.com/paazmaya/chatanyara.js.git"
   },
   "keywords": [
     "performance",
@@ -29,9 +29,21 @@
     "timing",
     "resource"
   ],
+  "testling": {
+    "browsers": [
+      "ie/8..10",
+      "firefox/3.5",
+      "firefox/latest",
+      "chrome/latest",
+      "safari/5..latest",
+      "opera/11",
+      "opera/next"
+    ],
+    "html": "tests/index.html"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paazmaya/Chatanyara.js/issues"
+    "url": "https://github.com/paazmaya/chatanyara.js/issues"
   },
   "devDependencies": {
     "chai": "~3.3",
