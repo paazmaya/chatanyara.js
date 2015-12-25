@@ -7,8 +7,10 @@ Okinawa, Japan. His name has also been dedicated to a few Karate and Ryukyu Kobu
 kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 [![wercker status](https://app.wercker.com/status/3f2efd13e486de3e5f2943f360dd78ec/s "wercker status")](https://app.wercker.com/project/bykey/3f2efd13e486de3e5f2943f360dd78ec)
-[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/Chatanyara.js/index?flat)](https://github.com/igrigorik/ga-beacon)
-[![Development Dependency Status](https://gemnasium.com/paazmaya/Chatanyara.js.svg)](https://gemnasium.com/paazmaya/Chatanyara.js)
+[![browser support](https://ci.testling.com/paazmaya/chatanyara.js.png)
+](https://ci.testling.com/paazmaya/chatanyara.js)
+[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/chatanyara.js/index?flat)](https://github.com/igrigorik/ga-beacon)
+[![Development Dependency Status](https://gemnasium.com/paazmaya/chatanyara.js.svg)](https://gemnasium.com/paazmaya/chatanyara.js)
 
 ## Installation
 
