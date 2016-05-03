@@ -6,7 +6,7 @@
  * @version 0.2.0
  * @see https://github.com/paazmaya/chatanyara.js
  */
-var Chatanyara = (function main() {
+var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
   'use strict';
 
   var Kushanku = {
@@ -101,4 +101,4 @@ var Chatanyara = (function main() {
   };
 
   return Sai;
-}());
+})();
