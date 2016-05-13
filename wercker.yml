@@ -2,7 +2,7 @@ box: nodesource/trusty:LTS
 build:
   steps:
     - script:
-        name: npm versions before
+        name: npm versions
         code: |
           npm --versions
     - script:
@@ -11,17 +11,9 @@ build:
           sudo apt-get update
           sudo apt-get install -y phantomjs
     - script:
-        name: Where was PhantomJS installed and its version
+        name: Where is PhantomJS installed and its version
         code: |
           which phantomjs
           phantomjs --version
-    - script:
-        name: Install global stuff which seems to be needed
-        code: |
-          sudo npm i -g npm eslint mocha-phantomjs
-    - script:
-        name: npm versions before
-        code: |
-          npm --versions
     - npm-install
     - npm-test
