@@ -48,7 +48,7 @@
   "devDependencies": {
     "chai": "~3.5",
     "eslint": "~2.9",
-    "eslint-config-paazmaya": "~1.0",
+    "eslint-config-paazmaya": "~2.0",
     "mocha": "~2.4",
     "mocha-phantomjs": "~4.0",
     "uglifyjs": "~2.4"
