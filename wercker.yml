@@ -2,12 +2,12 @@ box: nodesource/trusty:LTS
 build:
   steps:
     - script:
-        name: echo nodejs information
+        name: Node.js versions
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
     - script:
-        name: echo update npm
+        name: Update npm
         code: |
           sudo npm i -g npm
     - script:
