@@ -6,7 +6,7 @@ Name of this JavaScript helper utility has been inspired by the late Karate mast
 Okinawa, Japan. His name has also been dedicated to a few Karate and Ryukyu Kobujutsu
 kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
-[![wercker status](https://app.wercker.com/status/3f2efd13e486de3e5f2943f360dd78ec/s "wercker status")](https://app.wercker.com/project/bykey/3f2efd13e486de3e5f2943f360dd78ec)
+[![wercker status](https://app.wercker.com/status/73c47c7a938cc03d2ea60f362a13048c/s "wercker status")](https://app.wercker.com/project/bykey/73c47c7a938cc03d2ea60f362a13048c)
 [![browser support](https://ci.testling.com/paazmaya/chatanyara.js.png)
 ](https://ci.testling.com/paazmaya/chatanyara.js)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/chatanyara.js/index?flat)](https://github.com/igrigorik/ga-beacon)
@@ -14,7 +14,8 @@ kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 ## Installation
 
-Chatanyara.js comes with a single file, called `chatanyara.js`.
+`chatanyara.js` comes with a single file, called `chatanyara.js` and minified version of it as `chatanyara.min.js`.
+
 It can be downloaded to a local copy directly from
 [GitHub](https://raw.github.com/paazmaya/Chatanyara.js/master/chatanyara.js),
 or installed via [Bower](http://bower.io/):

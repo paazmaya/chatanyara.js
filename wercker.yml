@@ -2,9 +2,10 @@ box: nodesource/trusty:LTS
 build:
   steps:
     - script:
-        name: npm versions
+        name: echo nodejs information
         code: |
-          npm --versions
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) running"
     - script:
         name: Install PhantomJS
         code: |
