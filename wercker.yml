@@ -7,6 +7,10 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
     - script:
+        name: echo update npm
+        code: |
+          sudo npm i -g npm
+    - script:
         name: Install PhantomJS
         code: |
           sudo apt-get update
