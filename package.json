@@ -47,10 +47,10 @@
   },
   "devDependencies": {
     "chai": "~3.5",
-    "eslint": "~2.11",
+    "eslint": "~3.0",
     "eslint-config-paazmaya": "~2.1",
     "mocha": "~2.5",
-    "mocha-phantomjs": "~4.0",
+    "mocha-phantomjs": "~4.1",
     "uglifyjs": "~2.4"
   }
 }
