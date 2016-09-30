@@ -7,6 +7,7 @@
  * @see https://github.com/paazmaya/chatanyara.js
  */
 var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
+
   'use strict';
 
   var Kushanku = {
@@ -34,7 +35,9 @@ var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
         if (typeof timing[key] === 'number') {
           // Value should be the time when the given event took place,
           // but might be 0 if the event was not fired or was not completed.
-          data[key] = timing[key] === 0 ? 0 : timing[key] - navigationStart;
+          data[key] = timing[key] === 0 ?
+            0 :
+            timing[key] - navigationStart;
         }
       }
 
@@ -51,8 +54,11 @@ var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
       if (typeof this.performance.navigation === 'object') {
         var nav = this.performance.navigation;
         data.redirectCount = nav.redirectCount;
-        data.navigationType = nav.type < 3 ? ['NAVIGATE', 'RELOAD', 'BACK_FORWARD'][nav.type] : nav.type;
+        data.navigationType = nav.type < 3 ?
+          ['NAVIGATE', 'RELOAD', 'BACK_FORWARD'][nav.type] :
+          nav.type;
       }
+
       return data;
     },
 
