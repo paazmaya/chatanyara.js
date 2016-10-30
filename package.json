@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "chai": "~3.5",
-    "eslint": "~3.6",
+    "eslint": "~3.9",
     "eslint-config-paazmaya": "~3.0",
     "mocha": "~3.1",
     "mocha-phantomjs": "~4.1",
