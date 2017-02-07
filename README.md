@@ -140,7 +140,7 @@ something similar to:
 
 ## Testing
 
-In order to run the included [Mocha](http://visionmedia.github.io/mocha/ "Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun")
+In order to run the included [Mocha](http://mochajs.org/ "Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun")
 based unit tests, use the following command:
 
 ```sh
