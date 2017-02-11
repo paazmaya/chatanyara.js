@@ -19,6 +19,9 @@
     "chatanyara.min.js",
     "LICENSE"
   ],
+  "engines": {
+    "node": ">=6.9.5"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/paazmaya/chatanyara.js.git"
