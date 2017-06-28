@@ -2,15 +2,17 @@
 
 > Navigation and Resource Timing results
 
-Name of this JavaScript helper utility has been inspired by the late Karate master from
-Okinawa, Japan. His name has also been dedicated to a few Karate and Ryukyu Kobujutsu
-kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
-
 [![wercker status](https://app.wercker.com/status/73c47c7a938cc03d2ea60f362a13048c/s "wercker status")](https://app.wercker.com/project/bykey/73c47c7a938cc03d2ea60f362a13048c)
 [![browser support](https://ci.testling.com/paazmaya/chatanyara.js.png)
 ](https://ci.testling.com/paazmaya/chatanyara.js)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/chatanyara.js/index?flat)](https://github.com/igrigorik/ga-beacon)
 [![Development Dependency Status](https://gemnasium.com/paazmaya/chatanyara.js.svg)](https://gemnasium.com/paazmaya/chatanyara.js)
+
+## Background for the name
+
+Name of this JavaScript helper utility has been inspired by the late Karate master from
+Okinawa, Japan. His name has also been dedicated to a few Karate and Ryukyu Kobujutsu
+kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 
 ## Installation
 
@@ -217,4 +219,3 @@ Version  | Date       | Changes
 Copyright (c) [Juga Paazmaya](https://paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
-
