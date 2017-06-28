@@ -1,4 +1,4 @@
-box: nodesource/trusty:LTS
+box: node:6-wheezy
 build:
   steps:
     - script:
@@ -6,10 +6,6 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-    - script:
-        name: Update npm
-        code: |
-          sudo npm i -g npm
     - script:
         name: Install PhantomJS
         code: |
