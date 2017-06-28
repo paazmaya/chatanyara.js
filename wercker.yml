@@ -1,4 +1,4 @@
-box: node:6-wheezy
+box: nightbringer/docker-phantomjs-nodejs
 build:
   steps:
     - script:
@@ -6,11 +6,6 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-    - script:
-        name: Install PhantomJS
-        code: |
-          sudo apt-get update
-          sudo apt-get install -y phantomjs
     - script:
         name: Where is PhantomJS installed and its version
         code: |
