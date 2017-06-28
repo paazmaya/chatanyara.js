@@ -1,4 +1,4 @@
-box: nightbringer/docker-phantomjs-nodejs
+box: node:6-wheezy
 build:
   steps:
     - script:
