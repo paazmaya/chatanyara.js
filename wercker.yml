@@ -6,10 +6,8 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-    - script:
-        name: Where is PhantomJS installed and its version
-        code: |
-          which phantomjs
-          phantomjs --version
     - npm-install
+    - script:
+        name: ESLint execution
+        code: npm run lint
     - npm-test
