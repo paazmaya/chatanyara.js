@@ -3,8 +3,6 @@
 > Navigation and Resource Timing results
 
 [![wercker status](https://app.wercker.com/status/73c47c7a938cc03d2ea60f362a13048c/s "wercker status")](https://app.wercker.com/project/bykey/73c47c7a938cc03d2ea60f362a13048c)
-[![browser support](https://ci.testling.com/paazmaya/chatanyara.js.png)
-](https://ci.testling.com/paazmaya/chatanyara.js)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/chatanyara.js/index?flat)](https://github.com/igrigorik/ga-beacon)
 [![Development Dependency Status](https://gemnasium.com/paazmaya/chatanyara.js.svg)](https://gemnasium.com/paazmaya/chatanyara.js)
 
@@ -19,7 +17,7 @@ kata, such as `Chatanyara Kushanku` and `Chatanyara no sai`.
 `chatanyara.js` comes with a single file, called `chatanyara.js` and minified version of it as `chatanyara.min.js`.
 
 It can be downloaded to a local copy directly from
-[GitHub](https://raw.github.com/paazmaya/Chatanyara.js/master/chatanyara.js),
+[GitHub](https://raw.github.com/paazmaya/chatanyara.js/master/chatanyara.js),
 or installed via [Bower](http://bower.io/):
 
 ```sh
@@ -146,14 +144,14 @@ In order to run the included [Mocha](http://mochajs.org/ "Mocha is a feature-ric
 based unit tests, use the following command:
 
 ```sh
-mocha-phantomjs tests/index.html
+npm test
 ```
 
 Additionally the code conventions and proper use of JavaScript can be validated
 via [eslint](http://eslint.org/ "The pluggable linting utility for JavaScript"):
 
 ```sh
-node node_modules/eslint/bin/eslint.js --config .eslintrc --format compact Chatanyara.js
+npm run lint
 ```
 
 ## Minification
@@ -174,7 +172,7 @@ npm run build
 
 [JSCritic](http://jscritic.com/ "Quickly check how well 3rd party script behaves")
 is a tool that can be used to check how well a 3rd party script behaves in the
-terms of overwriting native objects and other practises that are considered harmful.
+terms of overwriting native objects and other practices that are considered harmful.
 
 Below are the result for `Chatanyara.js`, version 0.1.2.
 
