@@ -205,14 +205,18 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Version history
 
-Version  | Date       | Changes
--------- | ---------- | --------
-`v0.2.1` | 2016-06-12 | `v0.2.0` did not contain any JavaScript files...
-`v0.2.0` | 2015-11-16 | Available via npm #9 #5. Testing at Wercker
-`v0.1.3` | 2014-04-21 | ESLint full pass, available via jsDelivr #4
-`v0.1.2` | 2014-03-04 | Mocha tests running at Travis CI #1
-`v0.1.1` | 2014-01-01 | Vanilla JS release with removal of jQuery.each
-`v0.1.0` | 2013-12-31 | First release
+* `v0.2.1` (2016-06-12)
+  - `v0.2.0` did not contain any JavaScript files...
+* `v0.2.0` (2015-11-16)
+  - Available via npm #9 #5. Testing at Wercker
+* `v0.1.3` (2014-04-21)
+  - ESLint full pass, available via jsDelivr #4
+* `v0.1.2` (2014-03-04)
+  - Mocha tests running at Travis CI #1
+* `v0.1.1` (2014-01-01)
+  - Vanilla JS release with removal of jQuery.each
+* `v0.1.0` (2013-12-31)
+  - First release
 
 ## License
 
