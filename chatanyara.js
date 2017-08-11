@@ -21,7 +21,7 @@ var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
      * @see http://caniuse.com/nav-timing
      * @returns {boolean|object} Object with navigation timing information or false if not supported
      */
-    getNavigationTimings: function navTime() {
+    getNavigationTimings: function getNavigationTimings() {
       if (!this.performance || typeof this.performance.timing !== 'object') {
         return false;
       }
@@ -69,7 +69,7 @@ var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
      * @see https://bugzilla.mozilla.org/show_bug.cgi?id=822480
      * @returns {boolean|object} Object with resource loading information or false if not supported
      */
-    getResourceTimings: function resTime() {
+    getResourceTimings: function getResourceTimings() {
       if (!this.performance || typeof this.performance.getEntriesByType !== 'function') {
         return false;
       }
@@ -83,7 +83,7 @@ var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
      * Chome only
      * @returns {boolean|object} Object with memory information or false if not supported
      */
-    getMemoryInfo: function memInfo() {
+    getMemoryInfo: function getMemoryInfo() {
       if (!this.performance || typeof this.performance.memory !== 'object') {
         return false;
       }
@@ -95,7 +95,7 @@ var Chatanyara = (function main() { // eslint-disable-line no-unused-vars
   };
 
   var Sai = {
-    parse: function saiParse() {
+    parse: function parse() {
       return {
         url: window.location.pathname,
         userAgent: window.navigator.userAgent,
