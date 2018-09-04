@@ -12,7 +12,9 @@
   "scripts": {
     "test": "mocha-phantomjs -p node_modules/phantomjs/bin/phantomjs tests/index.html",
     "lint": "eslint chatanyara.js",
-    "build": "uglifyjs --compress --output chatanyara.min.js --comments --stats chatanyara.js"
+    "build": "uglifyjs --compress --output chatanyara.min.js --comments --stats chatanyara.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "files": [
     "chatanyara.js",
@@ -43,5 +45,9 @@
     "mocha": "~5.2",
     "mocha-phantomjs": "~4.1",
     "uglifyjs": "~2.4"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.94.0"
   }
 }
