@@ -1,6 +1,8 @@
 describe('Chatanyara', function() {
 
-  var expect = chai.expect;
+  var {
+    expect
+  } = chai;
   var results = Chatanyara.parse();
 
   it('should have all the keys defined and only them', function() {
@@ -8,7 +10,7 @@ describe('Chatanyara', function() {
     expect(results).to.have.keys(keys);
   });
 
-	describe('Memory', function() {
+  describe('Memory', function() {
     if (window.navigator.userAgent.indexOf('Chrome') === -1) {
       it('should be false in a browser other than Chrome', function() {
         expect(results.memory).to.be.false;
@@ -19,9 +21,9 @@ describe('Chatanyara', function() {
         expect(results.memory).to.be.instanceof(Object);
       });
     }
-	});
+  });
 
-	describe('Navigation', function() {
+  describe('Navigation', function() {
 
     it('should have only 0 items due to PhantomJS', function() {
       var i = 0;
@@ -30,36 +32,36 @@ describe('Chatanyara', function() {
           ++i;
         }
       }
-			expect(i).to.be.at.least(0);
-		});
+      expect(i).to.be.at.least(0);
+    });
 
     it('navigationStart is not supported in PhantomJS', function() {
-			expect(results.navigation.navigationStart).to.be.undefined;
-		});
+      expect(results.navigation.navigationStart).to.be.undefined;
+    });
 
-	});
+  });
 
-	describe('Resource', function() {
+  describe('Resource', function() {
 
     it('should have nothing', function() {
-			expect(results.resource.length).to.be.undefined;
-		});
+      expect(results.resource.length).to.be.undefined;
+    });
 
-	});
+  });
 
-	describe('Window', function() {
+  describe('Window', function() {
 
     it('URL should be of test page', function() {
       expect(results.url).to.have.string('tests/index.html');
-		});
+    });
 
     it('should have a meaningful user agent', function() {
       expect(results.userAgent).to.have.string('Mozilla');
-		});
+    });
 
-	});
+  });
 
-	describe('Speed', function() {
+  describe('Speed', function() {
     var start = Date.now();
     for (var i = 0; i < 1000; ++i) {
       var res = Chatanyara.parse();
@@ -68,7 +70,7 @@ describe('Chatanyara', function() {
 
     it('should not be slow (over 100 ms is slow for 1000 repetition)', function() {
       expect(timeUsed).to.be.below(100);
-		});
+    });
 
-	});
+  });
 });
