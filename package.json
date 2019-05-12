@@ -41,13 +41,13 @@
   "devDependencies": {
     "chai": "~4.2",
     "eslint": "~5.16",
-    "eslint-config-paazmaya": "~5.2",
+    "eslint-config-paazmaya": "~5.3",
     "mocha": "~6.1",
     "mocha-phantomjs": "~4.1",
     "uglifyjs": "~2.4"
   },
   "snyk": true,
   "dependencies": {
-    "snyk": "^1.162.0"
+    "snyk": "^1.163.3"
   }
 }
