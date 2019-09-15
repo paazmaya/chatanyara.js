@@ -40,14 +40,14 @@
   },
   "devDependencies": {
     "chai": "~4.2",
-    "eslint": "~5.16",
-    "eslint-config-paazmaya": "~5.3",
-    "mocha": "~6.1",
+    "eslint": "~6.4",
+    "eslint-config-paazmaya": "~6.1",
+    "mocha": "~6.2",
     "mocha-phantomjs": "~4.1",
     "uglifyjs": "~2.4"
   },
   "snyk": true,
   "dependencies": {
-    "snyk": "^1.192.4"
+    "snyk": "^1.227.0"
   }
 }
